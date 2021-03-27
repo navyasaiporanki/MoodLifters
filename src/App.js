@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Name from "./Name";
+import Option from "./Option";
+import DisplayInfo from "./DisplayInfo";
+import Question from "./Question";
+import Home from "./Home";
+import BreathingPlaylist from "./BreathingPlaylist";
+import BreathingSong from "./BreathingSong";
+import MentalHealth from "./MentalHealth";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <main>
+        <BrowserRouter>
+          <Switch>
+            <Route path="/" component={Name} exact />
+            <Route path="/option" component={Option} />
+            <Route path="/display" component={DisplayInfo} />
+            <Route path="/question" component={Question} />
+            <Route path="/home" component={Home} />
+            <Route path="/breathing" component={BreathingPlaylist} />
+            <Route path="/breathingSong" component={BreathingSong} />
+            <Route path="/resources" component={MentalHealth} />
+          </Switch>
+        </BrowserRouter>
+      </main>
     </div>
   );
 }

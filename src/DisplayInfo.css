@@ -1,0 +1,54 @@
+.bodyDisplayInfo {
+
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    width: 60vh;
+    margin: auto;
+    height: 75vh;
+}
+
+
+.displayMessage {
+    font-size: 36px;
+    font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin:20px;
+}
+
+.infoDiv {
+    margin:20px;
+    font-size: 20px;
+    font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+.btnContinueDisplay {
+    /* width: 250px; */
+    width: 90%;
+    border-radius: 100px;
+    font-size: 20px;
+    height: 48px;
+    font-weight: 600;
+    justify-content: center;
+    font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border:none;
+    color:white !important;
+    background: rgb(83, 212, 119) !important;
+    margin:20px;
+}
+.btnSkip {
+    /* width: 250px; */
+    width: 90%;
+    border-radius: 100px;
+    font-size: 20px;
+    height: 48px;
+    font-weight: 600;
+    justify-content: center;
+    font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border:none;
+    /* color:white; */
+    background: rgba(0, 0, 0, 0.15) !important;
+    margin:20px;
+    color:rgb(56, 56, 56);
+}

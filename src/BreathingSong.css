@@ -1,0 +1,92 @@
+.breathingSongBody {
+    display: flex;
+    /* justify-content: center; */
+    height: 100vh;
+    flex-direction: column;
+    width: 60vh;
+    margin: auto;
+    text-align: center !important;
+}
+
+
+.playlistTitle {
+    font-size: 27px;
+    font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400px;
+    margin: 30px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+.image {
+    height: 29vh;
+    margin: 20px;
+    border: 1px solid brown;
+}
+
+
+.musicBar {
+    /* margin: 20px; */
+    border: 1px solid green;
+    display: flex;
+    flex-grow: 1;
+    max-height: 0.5px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+
+  .musicDIv {
+      display: flex;
+      align-items: center;
+      margin: 20px;
+      margin-top: 10vh;
+  }
+
+  .controls {
+      margin: 30px;
+      justify-content: center;
+  }
+
+  .controlsFlex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .playOption {
+      margin-left: 40px;
+      margin-right: 40px;
+  }
+
+  .font-size {
+      font-size: 60px;
+      color: green;
+  }
+
+  .footerBreathingSong {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: auto;
+    margin-bottom: 20px;
+    
+  }
+
+  .homeBS {
+      font-size: 60px;
+      color:black
+  }
+
+  .goToHomeBS {
+      color:black;
+      font-weight: 600;
+  }
