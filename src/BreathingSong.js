@@ -1,6 +1,9 @@
+import React from "react";
+import { useHistory } from "react-router-dom";
 import "./BreathingSong.css";
 
 function BreathingSong() {
+  const history = useHistory();
   return (
     <div
       style={{
@@ -25,14 +28,18 @@ function BreathingSong() {
           }}
         ></div>
 
-        <div>Name of the song</div>
+        <div>Lions Breath</div>
         <div className="musicDIv">
-          <div className="dot"></div>
-          <div className="musicBar"></div>
+          {/* <div className="dot"></div>
+          <div className="musicBar"></div> */}
           {/* <div className="dot"></div> */}
+          <audio controls>
+            <source src="deep-breathing.mp3" type="audio/mpeg" />
+
+          </audio>
         </div>
 
-        <div className="controls">
+        {/* <div className="controls">
           <div className="controlsFlex">
             <div>
               <span className="material-icons">skip_previous</span>
@@ -46,11 +53,11 @@ function BreathingSong() {
               <span className="material-icons">skip_next</span>
             </div>
           </div>
-        </div>
-        <div className="footerBreathingSong">
+        </div> */}
+        <div className="footerBreathingSong" onClick={() => history.push("/home")}>
           <div className="material-icons homeBS">home</div>
 
-          <div className="goToHomeBS">Go to Home</div>
+          <div className="goToHomeBS" >Go to Home</div>
         </div>
       </div>
     </div>

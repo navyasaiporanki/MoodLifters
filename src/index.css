@@ -76,3 +76,10 @@ code {
   text-align: center;
   color: white;
 }
+
+.homeMain {
+  width: 100vw;
+  height: 100vh;
+  background-color: aliceblue;
+  color: black !important;
+}

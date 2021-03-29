@@ -9,6 +9,11 @@ import Home from "./Home";
 import BreathingPlaylist from "./BreathingPlaylist";
 import BreathingSong from "./BreathingSong";
 import MentalHealth from "./MentalHealth";
+import ChatWithVolunteer from "./ChatWithVolunteer";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import Volunteers from "./Volunteers";
+import MoodTracker from "./MoodTracker";
 
 function App() {
   return (
@@ -24,6 +29,9 @@ function App() {
             <Route path="/breathing" component={BreathingPlaylist} />
             <Route path="/breathingSong" component={BreathingSong} />
             <Route path="/resources" component={MentalHealth} />
+            <Route path="/chat" component={ChatWithVolunteer} />
+            <Route path="/volunteer" component={Volunteers} />
+            <Route path="/mood" component={MoodTracker} />
           </Switch>
         </BrowserRouter>
       </main>

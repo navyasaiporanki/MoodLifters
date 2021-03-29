@@ -1,6 +1,9 @@
+import React from "react";
+import {useHistory } from "react-router-dom";
 import './DisplayInfo.css';
 
 function DisplayInfo() {
+    const history = useHistory();
     return (
 
         <div style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/cloud.jpeg'})`,
@@ -32,10 +35,10 @@ function DisplayInfo() {
 
                 </div>
                 <div className="btnDiv">
-                    <button className="btnContinueDisplay">Continue</button>
+                    <button className="btnContinueDisplay" onClick= {() => history.push("/question")}>Continue</button>
                 </div>
                 <div className="btnDiv">
-                    <button className="btnSkip">Skip</button>
+                    <button className="btnSkip" onClick= {() => history.push("/home")}>Skip</button>
                 </div>
             </div>
 

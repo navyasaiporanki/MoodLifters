@@ -3,13 +3,14 @@
   /* justify-content: center; */
   height: 100vh;
   flex-direction: column;
-  width: 60vw;
+  width: 100vw;
   margin: auto;
-  height: 90vh;
+  height: 100vh;
   text-align: center !important;
+  background: lightcyan;
 }
 
-.title {
+.titleMental {
   font-size: 27px;
   font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400px;
@@ -30,6 +31,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .col {
@@ -70,4 +72,12 @@
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
+}
+
+.allResources {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1 1 auto;
+  overflow-y: scroll;
 }

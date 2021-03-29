@@ -1,25 +1,32 @@
+import React from "react";
+import { useHistory } from "react-router-dom";
 import "./BreathingPlaylist.css";
 
 function BreathingPlaylist() {
+  const history = useHistory();
   return (
-    <div className="breathingBody" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/cloudBG.jpeg'})`,
-    height: "100vh",
-    width:"100vw",
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat'
-    }}>
+    <div
+      className="breathingBody"
+      style={{
+        backgroundImage: `url(${process.env.PUBLIC_URL + "/cloudBG.jpeg"})`,
+        height: "100vh",
+        width: "100vw",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <div className="playlistTitle">Breathing Exercise Playlist</div>
       <div className="textAlignLeft">
-        <div>
-          Breathing Exercies to Improve mood
-        </div>
-        4 Songs. 11 mins 19 secs
-        </div>
+        <div>Breathing Exercies to Improve mood</div>4 Songs. 11 mins 19 secs
+      </div>
 
       <div className="options">
         <div className="exercise">
-          <button className="buttonClass">
+          <button
+            className="buttonClass"
+            onClick={() => history.push("/breathingSong")}
+          >
             {" "}
             Lions Breath
             <span className="iconInfo">
@@ -72,7 +79,7 @@ function BreathingPlaylist() {
         </div>
       </div>
 
-      <div className="footerBreathing">
+      <div className="footerBreathing" onClick={() => history.push("/home")}>
         <div className="material-icons homeFont">home</div>
 
         <div className="goToHome">Go to Home</div>

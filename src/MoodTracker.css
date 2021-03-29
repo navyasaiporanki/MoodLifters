@@ -1,0 +1,70 @@
+.bodyMood {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background:lightcyan;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleMood {
+    font-size: 27px;
+    font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400px;
+    margin: 30px;
+    margin-top: 25px;
+    text-align: center;
+  }
+
+.windowMood {
+
+    border: 5px solid aliceblue;
+    width: 60%;
+    height: 80vh;
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+
+}
+
+
+
+.mess {
+    text-align: end;
+    padding:20px;
+}
+
+.cardIndex {
+    width: 100px;
+    height: 100px;
+}
+
+.fontSizeMood {
+    font-size: 48px;
+    color: yellowgreen
+}
+
+.outerDiv {
+    display: flex;
+    justify-content: space-around;
+    margin:20px;
+}
+
+.context {
+    border: 1px solid darkcyan;
+    width: 80%;
+    height: 150px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.btnSave {
+    color: red;
+}
+
+textarea:hover {
+    border: none;
+}
