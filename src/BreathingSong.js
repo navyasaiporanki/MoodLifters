@@ -1,9 +1,12 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 import "./BreathingSong.css";
 
 function BreathingSong() {
   const history = useHistory();
+  const location = useLocation();
+  console.log(location);
+
   return (
     <div
       style={{
@@ -28,7 +31,7 @@ function BreathingSong() {
           }}
         ></div>
 
-        <div>Lions Breath</div>
+        <div>{location.nameOfSong}</div>
         <div className="musicDIv">
           {/* <div className="dot"></div>
           <div className="musicBar"></div> */}
