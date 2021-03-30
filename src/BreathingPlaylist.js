@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
 import "./BreathingPlaylist.css";
 
 function BreathingPlaylist() {
   const history = useHistory();
+  const [text, setText] = useState("");
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <div
       className="breathingBody"
@@ -25,65 +32,119 @@ function BreathingPlaylist() {
         <div className="exercise">
           <button
             className="buttonClass"
-            onClick={() => history.push("/breathingSong")}
+            onClick={() =>
+              history.push({
+                pathname: "/breathingSong",
+                nameOfSong: "Lions Breath",
+              })
+            }
           >
             {" "}
             Lions Breath
-            <span className="iconInfo">
-              <i className="fas fa-info-circle"></i>
-            </span>
           </button>
+          <span
+            className="iconInfo"
+            onClick={() => {
+              setText("Some matter about lions breath");
+              handleShow();
+            }}
+          >
+            <i className="fas fa-info-circle"></i>
+          </span>
           <div className="padding10px">
             <span className="material-icons">favorite</span>
           </div>
           <label className="time">3:11</label>
         </div>
         <div className="exercise">
-          <button 
+          <button
             className="buttonClass"
-              onClick={() => history.push("/breathingSong")}
-              >
+            onClick={() =>
+              history.push({
+                pathname: "/breathingSong",
+                nameOfSong: "Breath Focus",
+              })
+            }
+          >
             {" "}
             Breath Focus
-            <span className="iconInfo">
-              <i className="fas fa-info-circle"></i>
-            </span>
           </button>
+          <span
+            className="iconInfo"
+            onClick={() => {
+              setText("Some matter about breath focus");
+              handleShow();
+            }}
+          >
+            <i className="fas fa-info-circle"></i>
+          </span>
           <div className="padding10px">
             <span className="material-icons">favorite</span>
           </div>
           <label className="time">2:08</label>
         </div>
         <div className="exercise">
-          <button 
+          <button
             className="buttonClass"
-            onClick={() => history.push("/breathingSong")}>
+            onClick={() =>
+              history.push({
+                pathname: "/breathingSong",
+                nameOfSong: "Equal Breathing",
+              })
+            }
+          >
             {" "}
             Equal Breathing
-            <span className="iconInfo">
-              <i className="fas fa-info-circle"></i>
-            </span>
           </button>
+          <span
+            className="iconInfo"
+            onClick={() => {
+              setText("Some matter about Equal breath");
+              handleShow();
+            }}
+          >
+            <i className="fas fa-info-circle"></i>
+          </span>
           <div className="padding10px">
             <span className="material-icons">favorite</span>
           </div>
           <label className="time">2:45</label>
         </div>
         <div className="exercise">
-          <button 
+          <button
             className="buttonClass"
-            onClick={() => history.push("/breathingSong")}>
+            onClick={() =>
+              history.push({
+                pathname: "/breathingSong",
+                nameOfSong: "Sital Breath",
+              })
+            }
+          >
             {" "}
             Sitali Breath
-            <span className="iconInfo">
-              <i className="fas fa-info-circle"></i>
-            </span>
           </button>
+          <span
+            className="iconInfo"
+            onClick={() => {
+              setText("Some matter about sitali breath");
+              handleShow();
+            }}
+          >
+            <i className="fas fa-info-circle"></i>
+          </span>
           <div className="padding10px">
             <span className="material-icons">favorite</span>
           </div>
           <label className="time">3:15</label>
         </div>
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Body>{text}</Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
       </div>
 
       <div className="footerBreathing" onClick={() => history.push("/home")}>

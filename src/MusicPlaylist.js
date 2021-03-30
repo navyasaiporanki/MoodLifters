@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-<<<<<<< HEAD:src/MusicPlaylist.js
 import "./MusicPlaylist.css";
-=======
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import "./BreathingPlaylist.css";
->>>>>>> f599a02ea43270499b6815919464d083f8382ecc:src/BreathingPlaylist.js
 
 function MusicPlaylist() {
   const history = useHistory();
