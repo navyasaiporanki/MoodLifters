@@ -4,14 +4,11 @@ import "./App.css";
 
 function Name() {
   const history = useHistory();
-  const [showContinueButton, setshowContinueButton] = useState(false);
+  //const [showContinueButton, setshowContinueButton] = useState(false);
   const [value, setValue] = useState("");
 
   function handleClick(event) {
     setValue(event.target.value);
-    if (value !== "") {
-      setshowContinueButton(true);
-    } 
   }
   return (
     <div
@@ -39,8 +36,8 @@ function Name() {
           onChange={(event) => handleClick(event)}
         ></input>
         <button
-          style={{ display: showContinueButton ? "block" : "none" }}
-          className="getStarted"
+          
+          className={value !== "" ? 'getStarted': 'doNotShow'}
           onClick={() => {
             history.push("/display");
           }}

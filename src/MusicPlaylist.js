@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
+<<<<<<< HEAD:src/MusicPlaylist.js
 import "./MusicPlaylist.css";
+=======
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
+import "./BreathingPlaylist.css";
+>>>>>>> f599a02ea43270499b6815919464d083f8382ecc:src/BreathingPlaylist.js
 
 function MusicPlaylist() {
   const history = useHistory();
+  const [text, setText] = useState("");
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <div
       className="musicBody"
@@ -33,6 +44,15 @@ function MusicPlaylist() {
               <i className="fas fa-info-circle"></i>
             </span>
           </button>
+          <span
+            className="iconInfo"
+            onClick={() => {
+              setText("Some matter about lions breath");
+              handleShow();
+            }}
+          >
+            <i className="fas fa-info-circle"></i>
+          </span>
           <div className="padding10px">
             <span className="material-icons">favorite</span>
           </div>
@@ -62,6 +82,15 @@ function MusicPlaylist() {
               <i className="fas fa-info-circle"></i>
             </span>
           </button>
+          <span
+            className="iconInfo"
+            onClick={() => {
+              setText("Some matter about breath focus");
+              handleShow();
+            }}
+          >
+            <i className="fas fa-info-circle"></i>
+          </span>
           <div className="padding10px">
             <span className="material-icons">favorite</span>
           </div>
@@ -75,6 +104,15 @@ function MusicPlaylist() {
               <i className="fas fa-info-circle"></i>
             </span>
           </button>
+          <span
+            className="iconInfo"
+            onClick={() => {
+              setText("Some matter about Equal breath");
+              handleShow();
+            }}
+          >
+            <i className="fas fa-info-circle"></i>
+          </span>
           <div className="padding10px">
             <span className="material-icons">favorite</span>
           </div>
@@ -88,11 +126,28 @@ function MusicPlaylist() {
               <i className="fas fa-info-circle"></i>
             </span>
           </button>
+          <span
+            className="iconInfo"
+            onClick={() => {
+              setText("Some matter about sitali breath");
+              handleShow();
+            }}
+          >
+            <i className="fas fa-info-circle"></i>
+          </span>
           <div className="padding10px">
             <span className="material-icons">favorite</span>
           </div>
           <label className="time">3:15</label>
         </div>
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Body>{text}</Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
       </div>
 
       <div className="footerMusic" onClick={() => history.push("/home")}>

@@ -1,10 +1,12 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Accordion from "react-bootstrap/Accordion";
 import Button from "react-bootstrap/Button";
 import "./MentalHealth.css";
 
 export default function MentalHealth() {
+  const history = useHistory();
   return (
     <div className="healthResBody">
       <div className="titleMental">Mental Health Resources</div>
@@ -137,7 +139,7 @@ export default function MentalHealth() {
           </Card>
         </Accordion>
       </div>
-      <div className="footerMentalHealth">
+      <div className="footerMentalHealth" onClick={() => history.push("/home")}>
         {/* <button className="buttonClass"> Back to Home</button> */}
         <div className="material-icons homeFont">home</div>
 

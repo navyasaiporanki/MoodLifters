@@ -70,6 +70,10 @@ code {
   margin:20px;
 }
 
+.doNotShow {
+  display: none;
+}
+
 
 .titleDiv {
   padding-top: 20px;

@@ -17,7 +17,7 @@ function Home() {
       }}
     >
       <div className="homeBody">
-        <div className="showUserName">Welcome John,</div>
+        <div className="showUserName">Welcome,</div>
 
         <div className="optionsHome">
           <div className="text">How can we help you today?</div>
@@ -28,14 +28,8 @@ function Home() {
             {" "}
             Do CBT Breathing Exercise{" "}
           </button>
-          <button 
-            className="buttonClassHome"
-           onClick={() => history.push("/music")}
-           >
-             {" "} 
-           Listen to Calm music{" "}
-           </button>
-          <button className="buttonClassHome">
+          <button className="buttonClassHome"> Listen to Calm music</button>
+          <button className="buttonClassHome" onClick={() => history.push("/resources")}>
             {" "}
             Get Mental health Resources
           </button>
