@@ -7,19 +7,19 @@ import ContactCard from './ContactCard';
   const history = useHistory();
   return (
     <div className="volResBody">
-      <div className="titleVolunteer">Mental Health Resources</div>
+      <div className="titleVolunteer">Talk to a volunteer</div>
       <div className="resources">
         <div className="row">
           <div className="rowInside">
-            <ContactCard name="John Snow" title="CEO" info="some info"></ContactCard>
-            <ContactCard></ContactCard>
-            <ContactCard></ContactCard>
+            <ContactCard name="Jon Snow" title="CEO" info="some info"></ContactCard>
+            <ContactCard name="Anna Singh" title="social worker" info="some infos"></ContactCard>
+            <ContactCard name="Jeff Li" title="activist" info="some info"></ContactCard>
            
           </div>
           <div className="rowInside">
-            <ContactCard></ContactCard>
-            <ContactCard></ContactCard>
-            <ContactCard></ContactCard>
+            <ContactCard name="Shubham Singal" title="student" info="some info"></ContactCard>
+            <ContactCard name="William Smith" title="influencer" info="some info"></ContactCard>
+            <ContactCard name="Ella Kaspersky" title="assistant professor" info="some info"></ContactCard>
           </div>
           
           

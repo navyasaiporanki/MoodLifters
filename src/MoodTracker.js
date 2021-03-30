@@ -1,60 +1,76 @@
 import "./MoodTracker.css";
-import React from "react";
+import React, {useState} from "react";
 import { useHistory } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 
 function MoodTracker() {
   const history = useHistory();
+  const [selected, setSelected] = useState("")
   return (
     <div className="bodyMood">
       <div className="titleMood">Mood Tracker</div>
       <div className="windowMood">
         <div style={{ margin: "20px" }}>How are you Feeling Today?</div>
         <div className="outerDiv">
-          <div>
-            <Card className="cardIndex">
+          <div className= {selected === "joyful" ? 'selectedEmoji' : ''}>
+            <Card className="cardIndex" onClick= {() => {
+              setSelected('joyful')
+            }}>
               <Card.Body>
-                <i className="far fa-smile-beam fontSizeMood"></i>
+                <i className="far fa-grin-stars fontSizeMood joyful"></i>
+                Joyful
+              </Card.Body>
+            </Card>
+          </div>
+          <div className= {selected === "happy" ? 'selectedEmoji' : ''}>
+            <Card className="cardIndex" onClick= {() => {
+              setSelected('happy')
+            }}>
+              <Card.Body>
+                <i class="fal fa-grin fontSizeMood happy"></i>
                 Happy
               </Card.Body>
             </Card>
           </div>
-          <div>
-            <Card className="cardIndex">
+          <div className= {selected === "neutral" ? 'selectedEmoji' : ''}>
+            <Card className="cardIndex" onClick= {() => {
+              setSelected('neutral')
+            }}>
               <Card.Body>
-                <i class="far fa-sad-tear fontSizeMood"></i>
-                Sad
-              </Card.Body>
-            </Card>
-          </div>
-          <div>
-            <Card className="cardIndex">
-              <Card.Body>
-                <i class="fal fa-angry fontSizeMood"></i>
-                Angry
+                <i class="fas fa-meh fontSizeMood neutral"></i>
+                Neutral 
               </Card.Body>
             </Card>
           </div>
         </div>
         <div className="outerDiv">
-          <div>
-            <Card className="cardIndex">
+        <div className= {selected === "sad" ? 'selectedEmoji' : ''}>
+            <Card className="cardIndex" onClick= {() => {
+              setSelected('sad')
+            }}>
               <Card.Body>
-                <i className="far fa-smile-beam fontSizeMood"></i>
+                <i className="far fa-sad-tear fontSizeMood sad"></i>
+                Sad
               </Card.Body>
             </Card>
           </div>
-          <div>
-            <Card className="cardIndex">
+          <div className= {selected === "angry" ? 'selectedEmoji' : ''}>
+            <Card className="cardIndex" onClick= {() => {
+              setSelected('angry')
+            }}>
               <Card.Body>
-                <i class="far fa-sad-tear fontSizeMood"></i>
+                <i class="fal fa-angry fontSizeMood angry"></i>
+                Angry
               </Card.Body>
             </Card>
           </div>
-          <div>
-            <Card className="cardIndex">
+          <div className= {selected === "anxious" ? 'selectedEmoji' : ''}>
+            <Card className="cardIndex" onClick= {() => {
+              setSelected('anxious')
+            }}>
               <Card.Body>
-                <i class="fal fa-angry fontSizeMood"></i>
+                <i class="far fa-meh-rolling-eyes fontSizeMood anxious"></i>
+                Anxious
               </Card.Body>
             </Card>
           </div>

@@ -16,7 +16,7 @@ function ContactCard({ name, title, info }) {
             history.push("/chat");
           }}
         >
-          Contact
+          Chat With Volunteer
         </button>
       </p>
     </div>

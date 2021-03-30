@@ -1,12 +1,12 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import "./BreathingPlaylist.css";
+import "./MusicPlaylist.css";
 
-function BreathingPlaylist() {
+function MusicPlaylist() {
   const history = useHistory();
   return (
     <div
-      className="breathingBody"
+      className="musicBody"
       style={{
         backgroundImage: `url(${process.env.PUBLIC_URL + "/cloudBG.jpeg"})`,
         height: "100vh",
@@ -16,20 +16,20 @@ function BreathingPlaylist() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="playlistTitle">Breathing Exercise Playlist</div>
+      <div className="music-title">Calm Music Playlist</div>
       <div className="textAlignLeft">
-        <div>Breathing Exercies to Improve mood</div>4 Songs. 11 mins 19 secs
+        <div>Calm Music to Improve mood</div>5 Songs. 16 mins 38 secs
       </div>
 
       <div className="options">
-        <div className="exercise">
+        <div className="music">
           <button
-            className="buttonClass"
+            className="music-buttonClass"
             onClick={() => history.push("/breathingSong")}
           >
             {" "}
-            Lions Breath
-            <span className="iconInfo">
+            Very Calm Music
+            <span className="music-info">
               <i className="fas fa-info-circle"></i>
             </span>
           </button>
@@ -38,11 +38,27 @@ function BreathingPlaylist() {
           </div>
           <label className="time">3:11</label>
         </div>
-        <div className="exercise">
-          <button className="buttonClass">
+        <div className="music">
+          <button
+            className="music-buttonClass"
+            onClick={() => history.push("/breathingSong")}
+          >
             {" "}
-            Breath Focus
-            <span className="iconInfo">
+            Super Calm Music
+            <span className="music-info">
+              <i className="fas fa-info-circle"></i>
+            </span>
+          </button>
+          <div className="padding10px">
+            <span className="material-icons">favorite</span>
+          </div>
+          <label className="time">5:29</label>
+        </div>
+        <div className="music">
+          <button className="music-buttonClass">
+            {" "}
+            Calm Music
+            <span className="music-info">
               <i className="fas fa-info-circle"></i>
             </span>
           </button>
@@ -51,11 +67,11 @@ function BreathingPlaylist() {
           </div>
           <label className="time">2:08</label>
         </div>
-        <div className="exercise">
-          <button className="buttonClass">
+        <div className="music">
+          <button className="music-buttonClass">
             {" "}
-            Equal Breathing
-            <span className="iconInfo">
+            Relaxing Music
+            <span className="music-info">
               <i className="fas fa-info-circle"></i>
             </span>
           </button>
@@ -65,10 +81,10 @@ function BreathingPlaylist() {
           <label className="time">2:45</label>
         </div>
         <div className="exercise">
-          <button className="buttonClass">
+          <button className="music-buttonClass">
             {" "}
-            Sitali Breath
-            <span className="iconInfo">
+            Piano Music
+            <span className="music-info">
               <i className="fas fa-info-circle"></i>
             </span>
           </button>
@@ -79,7 +95,7 @@ function BreathingPlaylist() {
         </div>
       </div>
 
-      <div className="footerBreathing" onClick={() => history.push("/home")}>
+      <div className="footerMusic" onClick={() => history.push("/home")}>
         <div className="material-icons homeFont">home</div>
 
         <div className="goToHome">Go to Home</div>
@@ -88,4 +104,4 @@ function BreathingPlaylist() {
   );
 }
 
-export default BreathingPlaylist;
+export default MusicPlaylist;

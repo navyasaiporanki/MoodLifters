@@ -68,3 +68,28 @@
 textarea:hover {
     border: none;
 }
+
+.joyful{
+    color:green;
+}
+
+.happy{
+    color:yellowgreen;
+}
+
+.neutral{
+    color:rgba(206, 240, 15, 0.767);
+
+}
+
+.sad{
+    color:rgb(160, 70, 55);
+}
+
+.angry{
+    color:darkred;
+}
+
+.anxious{
+    color:darkviolet
+}
