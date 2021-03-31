@@ -11,15 +11,15 @@ import ContactCard from './ContactCard';
       <div className="resources">
         <div className="row">
           <div className="rowInside">
-            <ContactCard name="Jon Snow" title="CEO" info="some info"></ContactCard>
-            <ContactCard name="Anna Singh" title="social worker" info="some infos"></ContactCard>
-            <ContactCard name="Jeff Li" title="activist" info="some info"></ContactCard>
+            <ContactCard name="Jon Snow" title="CEO" info="The true heir to the Iron throne"></ContactCard>
+            <ContactCard name="Anna Singh" title="social worker" info="Social Worker who likes to help people"></ContactCard>
+            <ContactCard name="Jeff Li" title="activist" info="LGBTQ activist"></ContactCard>
            
           </div>
           <div className="rowInside">
-            <ContactCard name="Shubham Singal" title="student" info="some info"></ContactCard>
-            <ContactCard name="William Smith" title="influencer" info="some info"></ContactCard>
-            <ContactCard name="Ella Kaspersky" title="assistant professor" info="some info"></ContactCard>
+            <ContactCard name="Lil Raj" title="student" info="Grad Student"></ContactCard>
+            <ContactCard name="William Smith" title="influencer" info="Exercise and fitness expert"></ContactCard>
+            <ContactCard name="Ella Kaspersky" title="assistant professor" info="Psychology professor at Harvard"></ContactCard>
           </div>
           
           
