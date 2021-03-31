@@ -15,6 +15,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Volunteers from "./Volunteers";
 import MoodTracker from "./MoodTracker";
 import MusicPlaylist from "./MusicPlaylist";
+import CalmMusic from "./CalmMusic";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route path="/volunteer" component={Volunteers} />
             <Route path="/mood" component={MoodTracker} />
             <Route path="/music" component={MusicPlaylist} />
+            <Route path="/calmMusic" component={CalmMusic} />
           </Switch>
         </BrowserRouter>
       </main>

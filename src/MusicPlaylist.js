@@ -26,25 +26,25 @@ function MusicPlaylist() {
     >
       <div className="music-title">Calm Music Playlist</div>
       <div className="textAlignLeft">
-        <div>Calm Music to Improve mood</div>5 Songs. 16 mins 38 secs
+        <div>Calm Music to Improve mood</div>4 Songs. 16 mins 38 secs
       </div>
 
       <div className="options">
         <div className="music">
           <button
             className="music-buttonClass"
-            onClick={() => history.push("/breathingSong")}
+            onClick={() => history.push("/calmMusic")}
           >
             {" "}
-            Very Calm Music
+            Relaxing Music
             <span className="music-info">
-              <i className="fas fa-info-circle"></i>
+              {/* <i className="fas fa-info-circle"></i> */}
             </span>
           </button>
           <span
             className="iconInfo"
             onClick={() => {
-              setText("Some matter about lions breath");
+              setText("Realxing Music that will relieve you from your stress");
               handleShow();
             }}
           >
@@ -53,9 +53,9 @@ function MusicPlaylist() {
           <div className="padding10px">
             <span className="material-icons">favorite</span>
           </div>
-          <label className="time">3:11</label>
+          <label className="time">5:11</label>
         </div>
-        <div className="music">
+        {/* <div className="music">
           <button
             className="music-buttonClass"
             onClick={() => history.push("/breathingSong")}
@@ -65,24 +65,25 @@ function MusicPlaylist() {
             <span className="music-info">
               <i className="fas fa-info-circle"></i>
             </span>
-          </button>
-          <div className="padding10px">
+          </button> */}
+          {/* {/* <div className="padding10px">
             <span className="material-icons">favorite</span>
           </div>
           <label className="time">5:29</label>
-        </div>
+        </div> */}
         <div className="music">
-          <button className="music-buttonClass">
+          <button className="music-buttonClass"
+          onClick={() => history.push("/calmMusic")}>
             {" "}
-            Calm Music
+            Beautiful Music for sleep
             <span className="music-info">
-              <i className="fas fa-info-circle"></i>
-            </span>
+              {/* <i className="fas fa-info-circle"></i> */}
+            </span> 
           </button>
           <span
             className="iconInfo"
             onClick={() => {
-              setText("Some matter about breath focus");
+              setText("Music that will help you sleep better");
               handleShow();
             }}
           >
@@ -91,20 +92,21 @@ function MusicPlaylist() {
           <div className="padding10px">
             <span className="material-icons">favorite</span>
           </div>
-          <label className="time">2:08</label>
+          <label className="time">3:29</label>
         </div>
         <div className="music">
-          <button className="music-buttonClass">
+          <button className="music-buttonClass"
+          onClick={() => history.push("/calmMusic")}>
             {" "}
-            Relaxing Music
+            Focus Music for work/study
             <span className="music-info">
-              <i className="fas fa-info-circle"></i>
+              {/* <i className="fas fa-info-circle"></i> */}
             </span>
           </button>
           <span
             className="iconInfo"
             onClick={() => {
-              setText("Some matter about Equal breath");
+              setText("Music that will help you focus in your work/study");
               handleShow();
             }}
           >
@@ -113,20 +115,21 @@ function MusicPlaylist() {
           <div className="padding10px">
             <span className="material-icons">favorite</span>
           </div>
-          <label className="time">2:45</label>
+          <label className="time">4:45</label>
         </div>
         <div className="exercise">
-          <button className="music-buttonClass">
+          <button className="music-buttonClass"
+          onClick={() => history.push("/calmMusic")}>
             {" "}
-            Piano Music
+            Meditation Music
             <span className="music-info">
-              <i className="fas fa-info-circle"></i>
+              {/* <i className="fas fa-info-circle"></i> */}
             </span>
           </button>
           <span
             className="iconInfo"
             onClick={() => {
-              setText("Some matter about sitali breath");
+              setText("Music that will aid in meditation");
               handleShow();
             }}
           >

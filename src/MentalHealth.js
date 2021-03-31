@@ -20,11 +20,13 @@ export default function MentalHealth() {
             </Card.Header>
             <Accordion.Collapse eventKey="0">
               <Card.Body>
-                The goal of anger management is to reduce both your emotional
-                feelings and the physiological arousal that anger causes
+                Tips to manage anger:
+              1. Think before you speak
+              2.Get some exercise
+              
                 <div>
-                  The goal of anger management is to reduce both your emotional
-                  feelings and the physiological arousal that anger causes
+                3.Take a timeout
+              4.Use humor to release tension
                 </div>
               </Card.Body>
             </Accordion.Collapse>
@@ -38,29 +40,12 @@ export default function MentalHealth() {
             <Accordion.Collapse eventKey="1">
               <Card.Body>
                 {" "}
-                The goal of anger management is to reduce both your emotional
-                feelings and the physiological arousal that anger causes
+                Tips to manage Depression:
+              1. Get proper sleep
+              2.Try to stay involved
                 <div>
-                  The goal of anger management is to reduce both your emotional
-                  feelings and the physiological arousal that anger causes
-                </div>
-                The goal of anger management is to reduce both your emotional
-                feelings and the physiological arousal that anger causes
-                <div>
-                  The goal of anger management is to reduce both your emotional
-                  feelings and the physiological arousal that anger causes
-                </div>
-                The goal of anger management is to reduce both your emotional
-                feelings and the physiological arousal that anger causes
-                <div>
-                  The goal of anger management is to reduce both your emotional
-                  feelings and the physiological arousal that anger causes
-                </div>
-                The goal of anger management is to reduce both your emotional
-                feelings and the physiological arousal that anger causes
-                <div>
-                  The goal of anger management is to reduce both your emotional
-                  feelings and the physiological arousal that anger causes
+                3.Talk to a therapist
+              4. Improve overall lifestyle
                 </div>
               </Card.Body>
             </Accordion.Collapse>
@@ -74,29 +59,13 @@ export default function MentalHealth() {
             <Accordion.Collapse eventKey="3">
               <Card.Body>
                 {" "}
-                The goal of anger management is to reduce both your emotional
-                feelings and the physiological arousal that anger causes
+                
+                Tips to manage Stress:
+              1. Do deep breathing
+              2. Eat Well
                 <div>
-                  The goal of anger management is to reduce both your emotional
-                  feelings and the physiological arousal that anger causes
-                </div>
-                The goal of anger management is to reduce both your emotional
-                feelings and the physiological arousal that anger causes
-                <div>
-                  The goal of anger management is to reduce both your emotional
-                  feelings and the physiological arousal that anger causes
-                </div>
-                The goal of anger management is to reduce both your emotional
-                feelings and the physiological arousal that anger causes
-                <div>
-                  The goal of anger management is to reduce both your emotional
-                  feelings and the physiological arousal that anger causes
-                </div>
-                The goal of anger management is to reduce both your emotional
-                feelings and the physiological arousal that anger causes
-                <div>
-                  The goal of anger management is to reduce both your emotional
-                  feelings and the physiological arousal that anger causes
+                  3.Go easy on yourself
+                  4.Eliminate your triggers
                 </div>
               </Card.Body>
             </Accordion.Collapse>
@@ -110,29 +79,11 @@ export default function MentalHealth() {
             <Accordion.Collapse eventKey="4">
               <Card.Body>
                 {" "}
-                The goal of anger management is to reduce both your emotional
-                feelings and the physiological arousal that anger causes
+                Tips to manage Anxiety:
+              1. Write down your thoughts
+              
                 <div>
-                  The goal of anger management is to reduce both your emotional
-                  feelings and the physiological arousal that anger causes
-                </div>
-                The goal of anger management is to reduce both your emotional
-                feelings and the physiological arousal that anger causes
-                <div>
-                  The goal of anger management is to reduce both your emotional
-                  feelings and the physiological arousal that anger causes
-                </div>
-                The goal of anger management is to reduce both your emotional
-                feelings and the physiological arousal that anger causes
-                <div>
-                  The goal of anger management is to reduce both your emotional
-                  feelings and the physiological arousal that anger causes
-                </div>
-                The goal of anger management is to reduce both your emotional
-                feelings and the physiological arousal that anger causes
-                <div>
-                  The goal of anger management is to reduce both your emotional
-                  feelings and the physiological arousal that anger causes
+                2. Avoid Alcohol
                 </div>
               </Card.Body>
             </Accordion.Collapse>

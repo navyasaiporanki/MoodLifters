@@ -45,7 +45,7 @@ function BreathingPlaylist() {
           <span
             className="iconInfo"
             onClick={() => {
-              setText("Some matter about lions breath");
+              setText("Lion's breath is a type of pranayama that alleviates stress, eliminates toxins, and stimulates your throat and upper chest. It is also known as Lion Pose.");
               handleShow();
             }}
           >
@@ -72,7 +72,7 @@ function BreathingPlaylist() {
           <span
             className="iconInfo"
             onClick={() => {
-              setText("Some matter about breath focus");
+              setText("Breathing focus exercise to ease tension and feel relaxed");
               handleShow();
             }}
           >
@@ -99,7 +99,7 @@ function BreathingPlaylist() {
           <span
             className="iconInfo"
             onClick={() => {
-              setText("Some matter about Equal breath");
+              setText("Equal Breathing is a straightforward practice that focuses on the idea of equal breaths, meaning that inhalation lasts for the same amount of time as exhalation.");
               handleShow();
             }}
           >
@@ -126,7 +126,7 @@ function BreathingPlaylist() {
           <span
             className="iconInfo"
             onClick={() => {
-              setText("Some matter about sitali breath");
+              setText("Sitali Breath, often called as “the cooling breath”, is the act of drawing the air across the tongue and into the mouth. This has a cooling and calming effect on the nervous system");
               handleShow();
             }}
           >
