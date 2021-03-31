@@ -33,7 +33,8 @@ function MusicPlaylist() {
         <div className="music">
           <button
             className="music-buttonClass"
-            onClick={() => history.push("/calmMusic")}
+            onClick={() => history.push({ pathname: "/breathingSong",
+            nameOfSong: "Relaxing Music",})}
           >
             {" "}
             Relaxing Music
@@ -73,7 +74,8 @@ function MusicPlaylist() {
         </div> */}
         <div className="music">
           <button className="music-buttonClass"
-          onClick={() => history.push("/calmMusic")}>
+          onClick={() => history.push({ pathname: "/breathingSong",
+          nameOfSong: "Beautiful Music for Sleep",})}>
             {" "}
             Beautiful Music for sleep
             <span className="music-info">
@@ -96,7 +98,8 @@ function MusicPlaylist() {
         </div>
         <div className="music">
           <button className="music-buttonClass"
-          onClick={() => history.push("/calmMusic")}>
+          onClick={() => history.push({ pathname: "/breathingSong",
+          nameOfSong: "Focus Music for work/study",})}>
             {" "}
             Focus Music for work/study
             <span className="music-info">
@@ -119,7 +122,8 @@ function MusicPlaylist() {
         </div>
         <div className="exercise">
           <button className="music-buttonClass"
-          onClick={() => history.push("/calmMusic")}>
+          onClick={() => history.push({ pathname: "/breathingSong",
+          nameOfSong: "Meditation Music",})}>
             {" "}
             Meditation Music
             <span className="music-info">
