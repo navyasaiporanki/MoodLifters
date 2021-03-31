@@ -28,7 +28,7 @@ function Home() {
             {" "}
             Do CBT Breathing Exercise{" "}
           </button>
-          <button className="buttonClassHome"> Listen to Calm music</button>
+          <button className="buttonClassHome" onClick={() => history.push("/music")}> Listen to Calm music</button>
           <button className="buttonClassHome" onClick={() => history.push("/resources")}>
             {" "}
             Get Mental health Resources

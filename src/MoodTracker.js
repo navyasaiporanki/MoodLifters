@@ -1,73 +1,96 @@
 import "./MoodTracker.css";
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 
 function MoodTracker() {
   const history = useHistory();
-  const [selected, setSelected] = useState("")
+  const [selected, setSelected] = useState("");
+  const [value, setValue] = useState("");
+
+  function handleClick(event) {
+    setValue(event.target.value);
+  }
   return (
     <div className="bodyMood">
       <div className="titleMood">Mood Tracker</div>
       <div className="windowMood">
         <div style={{ margin: "20px" }}>How are you Feeling Today?</div>
         <div className="outerDiv">
-          <div className= {selected === "joyful" ? 'selectedEmoji' : ''}>
-            <Card className="cardIndex" onClick= {() => {
-              setSelected('joyful')
-            }}>
+          <div className={selected === "joyful" ? "selectedEmoji" : ""}>
+            <Card
+              className="cardIndex"
+              onClick={() => {
+                setSelected("joyful");
+              }}
+            >
               <Card.Body>
                 <i className="far fa-grin-stars fontSizeMood joyful"></i>
                 Joyful
               </Card.Body>
             </Card>
           </div>
-          <div className= {selected === "happy" ? 'selectedEmoji' : ''}>
-            <Card className="cardIndex" onClick= {() => {
-              setSelected('happy')
-            }}>
+          <div className={selected === "happy" ? "selectedEmoji" : ""}>
+            <Card
+              className="cardIndex"
+              onClick={() => {
+                setSelected("happy");
+              }}
+            >
               <Card.Body>
                 <i class="fal fa-grin fontSizeMood happy"></i>
                 Happy
               </Card.Body>
             </Card>
           </div>
-          <div className= {selected === "neutral" ? 'selectedEmoji' : ''}>
-            <Card className="cardIndex" onClick= {() => {
-              setSelected('neutral')
-            }}>
+          <div className={selected === "neutral" ? "selectedEmoji" : ""}>
+            <Card
+              className="cardIndex"
+              onClick={() => {
+                setSelected("neutral");
+              }}
+            >
               <Card.Body>
                 <i class="fas fa-meh fontSizeMood neutral"></i>
-                Neutral 
+                Neutral
               </Card.Body>
             </Card>
           </div>
         </div>
         <div className="outerDiv">
-        <div className= {selected === "sad" ? 'selectedEmoji' : ''}>
-            <Card className="cardIndex" onClick= {() => {
-              setSelected('sad')
-            }}>
+          <div className={selected === "sad" ? "selectedEmoji" : ""}>
+            <Card
+              className="cardIndex"
+              onClick={() => {
+                setSelected("sad");
+              }}
+            >
               <Card.Body>
                 <i className="far fa-sad-tear fontSizeMood sad"></i>
                 Sad
               </Card.Body>
             </Card>
           </div>
-          <div className= {selected === "angry" ? 'selectedEmoji' : ''}>
-            <Card className="cardIndex" onClick= {() => {
-              setSelected('angry')
-            }}>
+          <div className={selected === "angry" ? "selectedEmoji" : ""}>
+            <Card
+              className="cardIndex"
+              onClick={() => {
+                setSelected("angry");
+              }}
+            >
               <Card.Body>
                 <i class="fal fa-angry fontSizeMood angry"></i>
                 Angry
               </Card.Body>
             </Card>
           </div>
-          <div className= {selected === "anxious" ? 'selectedEmoji' : ''}>
-            <Card className="cardIndex" onClick= {() => {
-              setSelected('anxious')
-            }}>
+          <div className={selected === "anxious" ? "selectedEmoji" : ""}>
+            <Card
+              className="cardIndex"
+              onClick={() => {
+                setSelected("anxious");
+              }}
+            >
               <Card.Body>
                 <i class="far fa-meh-rolling-eyes fontSizeMood anxious"></i>
                 Anxious
@@ -78,12 +101,22 @@ function MoodTracker() {
         <div className="context">
           <div style={{ textAlign: "left", padding: "10px", opacity: "0.7" }}>
             <textarea
+              value={value}
+              onChange={(event) => handleClick(event)}
               style={{ width: "100%", height: "125px", border: "none" }}
               placeholder="What you would like to Say?"
             ></textarea>
           </div>
         </div>
-        <button className="getStarted" style={{ margin: "auto" }}>
+        <button
+          className="getStarted"
+          style={{ margin: "auto" }}
+          onClick={() => {
+            alert("Data Saved Successfully");
+            setSelected("");
+            setValue("")
+          }}
+        >
           {" "}
           Save My Mood
         </button>
