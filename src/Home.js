@@ -44,7 +44,7 @@ function Home() {
               sentiment_satisfied_alt
             </div>
             <i
-              className="fas fa-user-md doctorIcon"
+              className="fas fa-hands-helping doctorIcon"
               onClick={() => history.push("/volunteer")}
             ></i>
           </div>
