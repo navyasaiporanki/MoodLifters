@@ -32,6 +32,7 @@ function Name() {
         <input
           type="text"
           className="textBox"
+          placeholder="Enter your Name.."
           value={value}
           onChange={(event) => handleClick(event)}
         ></input>

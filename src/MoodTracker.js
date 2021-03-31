@@ -108,18 +108,23 @@ function MoodTracker() {
             ></textarea>
           </div>
         </div>
-        <button
-          className="getStarted"
-          style={{ margin: "auto" }}
-          onClick={() => {
-            alert("Mood Saved Successfully");
-            setSelected("");
-            setValue("")
-          }}
-        >
-          {" "}
-          Save My Mood
-        </button>
+        <div>
+          <button
+            className="getStarted"
+            style={{ margin: "auto" }}
+            onClick={() => {
+              alert("Mood Saved Successfully");
+              setSelected("");
+              setValue("");
+            }}
+          >
+            {" "}
+            Save My Mood
+          </button>
+          <button className="getStarted" onClick={() => {
+            history.push("/prevMood")
+          }}>View My Previous Mood</button>
+        </div>
       </div>
       <div className="footerMentalHealth" onClick={() => history.push("/home")}>
         <div className="material-icons homeFont">home</div>

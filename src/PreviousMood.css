@@ -1,0 +1,8 @@
+.itemOne {
+    display: flex;
+}
+
+.cardIndexOne {
+    height: 125px !important;
+    width: 125px !important;
+}
