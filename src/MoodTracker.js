@@ -112,7 +112,7 @@ function MoodTracker() {
           className="getStarted"
           style={{ margin: "auto" }}
           onClick={() => {
-            alert("Data Saved Successfully");
+            alert("Mood Saved Successfully");
             setSelected("");
             setValue("")
           }}

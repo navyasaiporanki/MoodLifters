@@ -12,7 +12,7 @@ export default function MentalHealth() {
       <div className="titleMental">Mental Health Resources</div>
       <div className="allResources">
         <Accordion defaultActiveKey="0">
-          <Card style={{width: "100%"}}>
+          <Card style={{ width: "100%" }}>
             <Card.Header>
               <Accordion.Toggle as={Button} variant="link" eventKey="0">
                 Anger Management
@@ -20,18 +20,15 @@ export default function MentalHealth() {
             </Card.Header>
             <Accordion.Collapse eventKey="0">
               <Card.Body>
-                Tips to manage anger:
-              1. Think before you speak
-              2.Get some exercise
-              
-                <div>
-                3.Take a timeout
-              4.Use humor to release tension
-                </div>
+                Tips to manage anger: <br />
+                <div>1. Think before you speak</div>
+                <div>2.Get some exercise</div>
+                <div>3.Take a timeout</div>
+                <div>4.Use humor to release tension</div>
               </Card.Body>
             </Accordion.Collapse>
           </Card>
-          <Card style={{width: "100%"}}>
+          <Card style={{ width: "100%" }}>
             <Card.Header>
               <Accordion.Toggle as={Button} variant="link" eventKey="1">
                 Depression
@@ -40,17 +37,15 @@ export default function MentalHealth() {
             <Accordion.Collapse eventKey="1">
               <Card.Body>
                 {" "}
-                Tips to manage Depression:
-              1. Get proper sleep
-              2.Try to stay involved
-                <div>
-                3.Talk to a therapist
-              4. Improve overall lifestyle
-                </div>
+                Tips to manage Depression <br />
+                <div>1. Get proper sleep </div>
+                <div>2.Try to stay involved</div>
+                <div>3.Talk to a therapist</div>
+                <div>4. Improve overall lifestyle</div>
               </Card.Body>
             </Accordion.Collapse>
           </Card>
-          <Card style={{width: "100%"}}>
+          <Card style={{ width: "100%" }}>
             <Card.Header>
               <Accordion.Toggle as={Button} variant="link" eventKey="3">
                 Stress
@@ -59,18 +54,15 @@ export default function MentalHealth() {
             <Accordion.Collapse eventKey="3">
               <Card.Body>
                 {" "}
-                
-                Tips to manage Stress:
-              1. Do deep breathing
-              2. Eat Well
-                <div>
-                  3.Go easy on yourself
-                  4.Eliminate your triggers
-                </div>
+                <div>Tips to manage Stress </div>
+                <div>1. Do deep breathing </div>
+                <div>2. Eat Well</div>
+                <div>3.Go easy on yourself </div>
+                <div>4.Eliminate your triggers</div>
               </Card.Body>
             </Accordion.Collapse>
           </Card>
-          <Card style={{width: "100%"}}>
+          <Card style={{ width: "100%" }}>
             <Card.Header>
               <Accordion.Toggle as={Button} variant="link" eventKey="4">
                 Anxiety
@@ -79,12 +71,9 @@ export default function MentalHealth() {
             <Accordion.Collapse eventKey="4">
               <Card.Body>
                 {" "}
-                Tips to manage Anxiety:
-              1. Write down your thoughts
-              
-                <div>
-                2. Avoid Alcohol
-                </div>
+                <div>Tips to manage Anxiety:</div>
+                <div>1. Write down your thoughts</div>
+                <div>2. Avoid Alcohol</div>
               </Card.Body>
             </Accordion.Collapse>
           </Card>
