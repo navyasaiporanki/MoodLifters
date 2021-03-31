@@ -25,7 +25,7 @@ function BreathingPlaylist() {
     >
       <div className="playlistTitle">Breathing Exercise Playlist</div>
       <div className="textAlignLeft">
-        <div>Breathing Exercies to Improve mood</div>4 Songs. 11 mins 19 secs
+        <div>Breathing Exercies to Improve mood</div>4 Songs. 23 mins 0 secs
       </div>
 
       <div className="options">
@@ -52,9 +52,8 @@ function BreathingPlaylist() {
             <i className="fas fa-info-circle"></i>
           </span>
           <div className="padding10px">
-            <span className="material-icons">favorite</span>
           </div>
-          <label className="time">3:11</label>
+          <label className="time">5:45</label>
         </div>
         <div className="exercise">
           <button
@@ -79,9 +78,8 @@ function BreathingPlaylist() {
             <i className="fas fa-info-circle"></i>
           </span>
           <div className="padding10px">
-            <span className="material-icons">favorite</span>
           </div>
-          <label className="time">2:08</label>
+          <label className="time">5:45</label>
         </div>
         <div className="exercise">
           <button
@@ -106,9 +104,8 @@ function BreathingPlaylist() {
             <i className="fas fa-info-circle"></i>
           </span>
           <div className="padding10px">
-            <span className="material-icons">favorite</span>
           </div>
-          <label className="time">2:45</label>
+          <label className="time">5:45</label>
         </div>
         <div className="exercise">
           <button
@@ -133,9 +130,8 @@ function BreathingPlaylist() {
             <i className="fas fa-info-circle"></i>
           </span>
           <div className="padding10px">
-            <span className="material-icons">favorite</span>
           </div>
-          <label className="time">3:15</label>
+          <label className="time">5:45</label>
         </div>
         <Modal show={show} onHide={handleClose}>
           <Modal.Body>{text}</Modal.Body>
