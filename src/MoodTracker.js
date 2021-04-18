@@ -104,7 +104,7 @@ function MoodTracker() {
               value={value}
               onChange={(event) => handleClick(event)}
               style={{ width: "100%", height: "125px", border: "none" }}
-              placeholder="What you would like to Say?"
+              placeholder="Why are you feeling like this?"
             ></textarea>
           </div>
         </div>
@@ -121,14 +121,32 @@ function MoodTracker() {
             {" "}
             Save My Mood
           </button>
-          <button className="getStarted" onClick={() => {
-            history.push("/prevMood")
-          }}>View My Previous Mood</button>
+          <button
+            className="getStarted"
+            onClick={() => {
+              history.push("/prevMood");
+            }}
+          >
+            View My Previous Mood
+          </button>
         </div>
-      </div>
-      <div className="footerMentalHealth" onClick={() => history.push("/home")}>
-        <div className="material-icons homeFont">home</div>
-        <div className="goToHome">Go to Home</div>
+        <div className="footerDiv" style={{margin:"25px"}}>
+          <div
+            className="footerBreathingSong"
+            onClick={() => history.push("/moodOptions")}
+          >
+            <div className="material-icons homeBS">sentiment_satisfied_alt</div>
+
+            <div className="goToHomeBS">Playlist</div>
+          </div>
+          <div
+            className="footerMentalHealth"
+            onClick={() => history.push("/home")}
+          >
+            <div className="material-icons homeFont">home</div>
+            <div className="goToHome">Go to Home</div>
+          </div>
+        </div>
       </div>
     </div>
   );

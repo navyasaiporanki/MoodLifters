@@ -17,6 +17,7 @@ import MoodTracker from "./MoodTracker";
 import MusicPlaylist from "./MusicPlaylist";
 import CalmMusic from "./CalmMusic";
 import PreviousMood from "./PreviousMood";
+import MoodOptions from "./MoodOptions";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
             <Route path="/music" component={MusicPlaylist} />
             <Route path="/calmMusic" component={CalmMusic} />
             <Route path="/prevMood" component={PreviousMood} />
+            <Route path="/moodOptions" component={MoodOptions} />
           </Switch>
         </BrowserRouter>
       </main>

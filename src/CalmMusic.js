@@ -38,29 +38,26 @@ function CalmMusic() {
           {/* <div className="dot"></div> */}
           <audio controls>
             <source src="calm-music.mp3" type="audio/mpeg" />
-
           </audio>
         </div>
 
-        {/* <div className="controls">
-          <div className="controlsFlex">
-            <div>
-              <span className="material-icons">skip_previous</span>
-            </div>
-            <div className="playOption">
-              <span className="material-icons font-size">
-                play_circle_filled
-              </span>
-            </div>
-            <div>
-              <span className="material-icons">skip_next</span>
-            </div>
+        <div className="footerDiv">
+          <div
+            className="footerBreathingSong"
+            onClick={() => history.push("/music")}
+          >
+            <div className="material-icons homeBS">playlist_play</div>
+
+            <div className="goToHomeBS">Playlist</div>
           </div>
-        </div> */}
-        <div className="footerBreathingSong" onClick={() => history.push("/home")}>
+          <div
+          className="footerBreathingSong"
+          onClick={() => history.push("/home")}
+        >
           <div className="material-icons homeBS">home</div>
 
-          <div className="goToHomeBS" >Go to Home</div>
+          <div className="goToHomeBS">Go to Home</div>
+        </div>
         </div>
       </div>
     </div>

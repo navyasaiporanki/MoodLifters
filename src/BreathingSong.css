@@ -49,6 +49,7 @@
       margin: 20px;
       margin-top: 10vh;
       justify-content: center;
+      flex-grow: 1;
   }
 
   .controls {
@@ -91,4 +92,9 @@
   .goToHomeBS {
       color:black;
       font-weight: 600;
+  }
+
+  .footerDiv {
+      display: flex;
+      justify-content: space-between;
   }

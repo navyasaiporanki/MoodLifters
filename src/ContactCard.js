@@ -13,7 +13,10 @@ function ContactCard({ name, title, info }) {
       <p>
         <button
           onClick={() => {
-            history.push("/chat");
+            history.push({
+              pathname: "/chat",
+              nameOfVolunteer: name,
+            });
           }}
         >
           Chat With Volunteer

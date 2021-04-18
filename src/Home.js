@@ -17,7 +17,7 @@ function Home() {
       }}
     >
       <div className="homeBody">
-        <div className="showUserName">Welcome,</div>
+        <div className="showUserName"></div>
 
         <div className="optionsHome">
           <div className="text">How can we help you today?</div>
@@ -28,8 +28,17 @@ function Home() {
             {" "}
             Do CBT Breathing Exercise{" "}
           </button>
-          <button className="buttonClassHome" onClick={() => history.push("/music")}> Listen to Calm music</button>
-          <button className="buttonClassHome" onClick={() => history.push("/resources")}>
+          <button
+            className="buttonClassHome"
+            onClick={() => history.push("/music")}
+          >
+            {" "}
+            Listen to Calm music
+          </button>
+          <button
+            className="buttonClassHome"
+            onClick={() => history.push("/resources")}
+          >
             {" "}
             Get Mental health Resources
           </button>
@@ -39,7 +48,7 @@ function Home() {
           <div className="iconsClass">
             <div
               className="material-icons homeFontIcon"
-              onClick={() => history.push("/mood")}
+              onClick={() => history.push("/moodOptions")}
             >
               sentiment_satisfied_alt
             </div>
@@ -57,7 +66,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="footerHome"></div>
+
       </div>
     </div>
   );
