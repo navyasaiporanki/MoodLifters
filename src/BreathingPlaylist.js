@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import "./BreathingPlaylist.css";
+import { Navbar, Form } from "react-bootstrap";
 
 function BreathingPlaylist() {
   const history = useHistory();
@@ -23,6 +24,15 @@ function BreathingPlaylist() {
         backgroundRepeat: "no-repeat",
       }}
     >
+      <Navbar>
+        <Navbar.Collapse className="justify-content-end">
+          <Form inline>
+            <Button variant="primary" onClick={() => history.push("/")}>
+              Logout
+            </Button>
+          </Form>
+        </Navbar.Collapse>
+      </Navbar>
       <div className="playlistTitle">Breathing Exercise Playlist</div>
       <div className="textAlignLeft">
         <div>Breathing Exercies to Improve mood</div>4 Songs. 23 mins 0 secs
@@ -45,14 +55,15 @@ function BreathingPlaylist() {
           <span
             className="iconInfo"
             onClick={() => {
-              setText("Lion's breath is a type of pranayama that alleviates stress, eliminates toxins, and stimulates your throat and upper chest. It is also known as Lion Pose.");
+              setText(
+                "Lion's breath is a type of pranayama that alleviates stress, eliminates toxins, and stimulates your throat and upper chest. It is also known as Lion Pose."
+              );
               handleShow();
             }}
           >
             <i className="fas fa-info-circle"></i>
           </span>
-          <div className="padding10px">
-          </div>
+          <div className="padding10px"></div>
           <label className="time">5:45</label>
         </div>
         <div className="exercise">
@@ -71,14 +82,15 @@ function BreathingPlaylist() {
           <span
             className="iconInfo"
             onClick={() => {
-              setText("Breathing focus exercise to ease tension and feel relaxed");
+              setText(
+                "Breathing focus exercise to ease tension and feel relaxed"
+              );
               handleShow();
             }}
           >
             <i className="fas fa-info-circle"></i>
           </span>
-          <div className="padding10px">
-          </div>
+          <div className="padding10px"></div>
           <label className="time">5:45</label>
         </div>
         <div className="exercise">
@@ -97,14 +109,15 @@ function BreathingPlaylist() {
           <span
             className="iconInfo"
             onClick={() => {
-              setText("Equal Breathing is a straightforward practice that focuses on the idea of equal breaths, meaning that inhalation lasts for the same amount of time as exhalation.");
+              setText(
+                "Equal Breathing is a straightforward practice that focuses on the idea of equal breaths, meaning that inhalation lasts for the same amount of time as exhalation."
+              );
               handleShow();
             }}
           >
             <i className="fas fa-info-circle"></i>
           </span>
-          <div className="padding10px">
-          </div>
+          <div className="padding10px"></div>
           <label className="time">5:45</label>
         </div>
         <div className="exercise">
@@ -123,14 +136,15 @@ function BreathingPlaylist() {
           <span
             className="iconInfo"
             onClick={() => {
-              setText("Sitali Breath, often called as “the cooling breath”, is the act of drawing the air across the tongue and into the mouth. This has a cooling and calming effect on the nervous system");
+              setText(
+                "Sitali Breath, often called as “the cooling breath”, is the act of drawing the air across the tongue and into the mouth. This has a cooling and calming effect on the nervous system"
+              );
               handleShow();
             }}
           >
             <i className="fas fa-info-circle"></i>
           </span>
-          <div className="padding10px">
-          </div>
+          <div className="padding10px"></div>
           <label className="time">5:45</label>
         </div>
         <Modal show={show} onHide={handleClose}>

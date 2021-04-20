@@ -2,16 +2,25 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Accordion from "react-bootstrap/Accordion";
-import Button from "react-bootstrap/Button";
+import { Navbar, Button, Form } from "react-bootstrap";
 import "./MentalHealth.css";
 
 export default function MentalHealth() {
   const history = useHistory();
   return (
     <div className="healthResBody">
+      <Navbar>
+        <Navbar.Collapse className="justify-content-end">
+          <Form inline>
+            <Button variant="primary" onClick={() => history.push("/")}>
+              Logout
+            </Button>
+          </Form>
+        </Navbar.Collapse>
+      </Navbar>
       <div className="titleMental">Mental Health Resources</div>
       <div className="allResources">
-        <Accordion >
+        <Accordion>
           <Card style={{ width: "100%" }}>
             <Card.Header>
               <Accordion.Toggle as={Button} variant="link" eventKey="0">

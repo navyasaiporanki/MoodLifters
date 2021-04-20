@@ -1,6 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import "./BreathingPlaylist.css";
+import { Navbar, Button, Form } from "react-bootstrap";
 
 function MoodOptions() {
   const history = useHistory();
@@ -17,6 +18,15 @@ function MoodOptions() {
         backgroundRepeat: "no-repeat",
       }}
     >
+      <Navbar>
+        <Navbar.Collapse className="justify-content-end">
+          <Form inline>
+            <Button variant="primary" onClick={() => history.push("/")}>
+              Logout
+            </Button>
+          </Form>
+        </Navbar.Collapse>
+      </Navbar>
       <div className="playlistTitle">Track Mood</div>
       <div className="textAlignLeft">
         <div>My Mood Info</div>
@@ -51,7 +61,6 @@ function MoodOptions() {
             View Mood History
           </button>
         </div>
-
       </div>
 
       <div className="footerBreathing" onClick={() => history.push("/home")}>

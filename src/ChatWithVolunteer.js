@@ -4,6 +4,7 @@ import Modal from "react-bootstrap/Modal";
 
 import Button from "react-bootstrap/Button";
 import "./ChatWithVolunteer.css";
+import { Navbar, Form } from "react-bootstrap";
 
 function ChatWithVolunteer() {
   const history = useHistory();
@@ -14,6 +15,15 @@ function ChatWithVolunteer() {
   const handleShow = () => setShow(true);
   return (
     <div className="bodyChat">
+      <Navbar>
+        <Navbar.Collapse className="justify-content-end">
+          <Form inline>
+            <Button variant="primary" onClick={() => history.push("/")}>
+              Logout
+            </Button>
+          </Form>
+        </Navbar.Collapse>
+      </Navbar>
       <div className="titleChat">
         You are chatting with {location.nameOfVolunteer}
       </div>
@@ -43,11 +53,16 @@ function ChatWithVolunteer() {
         </Modal>
       </div>
       <div className="chatFooterIcons">
-      <div className="footerMentalHealth" onClick={() => history.push("/volunteer")}>
-        <div className="material-icons homeFont"><i class="fas fa-arrow-left"></i></div>
+        <div
+          className="footerMentalHealth"
+          onClick={() => history.push("/volunteer")}
+        >
+          <div className="material-icons homeFont">
+            <i class="fas fa-arrow-left"></i>
+          </div>
 
-        <div className="goToHome">Back</div>
-      </div>
+          <div className="goToHome">Back</div>
+        </div>
         <div
           className="footerMentalHealth"
           onClick={() => history.push("/home")}

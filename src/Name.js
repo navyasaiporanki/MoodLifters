@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 import "./App.css";
 
 function Name() {
@@ -44,6 +45,11 @@ function Name() {
               className="textBox"
               placeholder="Enter your password"
             ></input>
+            <Form.Check
+              className={displayButton === "signup" ? "" : "doNotShow"}
+              type="checkbox"
+              label="I agree to the terms and conditions."
+            />
             <button
               className={displayButton === "login" ? "getStarted" : "doNotShow"}
               onClick={() => {

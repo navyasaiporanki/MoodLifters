@@ -1,12 +1,22 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import "./Question.css";
+import { Navbar, Button, Form } from "react-bootstrap";
 
 function Question() {
   const [selected, setSelected] = useState("");
   const history = useHistory();
   return (
     <div>
+      <Navbar>
+        <Navbar.Collapse className="justify-content-end">
+          <Form inline>
+            <Button variant="primary" onClick={() => history.push("/")}>
+              Logout
+            </Button>
+          </Form>
+        </Navbar.Collapse>
+      </Navbar>
       <div className="bodyQuestionInfo">
         <label className="displayMessage">How are you feeling today?</label>
         <div className="btnDiv">
@@ -43,8 +53,8 @@ function Question() {
         </div>
         <div className="contentDivMessage">
           <label style={{ display: selected === "good" ? "block" : "none" }}>
-            Glad to hear it. <br/> Recognizing how you feel is an important part of
-            mindfulness, so we’ll keep checking in with you.
+            Glad to hear it. <br /> Recognizing how you feel is an important
+            part of mindfulness, so we’ll keep checking in with you.
           </label>
           <label
             style={{

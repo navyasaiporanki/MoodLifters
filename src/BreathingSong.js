@@ -1,11 +1,11 @@
 import React from "react";
 import { useHistory, useLocation } from "react-router-dom";
 import "./BreathingSong.css";
+import { Navbar, Button, Form } from "react-bootstrap";
 
 function BreathingSong() {
   const history = useHistory();
   const location = useLocation();
-  console.log(location);
 
   return (
     <div
@@ -18,6 +18,15 @@ function BreathingSong() {
         backgroundRepeat: "no-repeat",
       }}
     >
+      <Navbar>
+        <Navbar.Collapse className="justify-content-end">
+          <Form inline>
+            <Button variant="primary" onClick={() => history.push("/")}>
+              Logout
+            </Button>
+          </Form>
+        </Navbar.Collapse>
+      </Navbar>
       <div className="breathingSongBody">
         <div className="playlistTitle">Playing Breathing Exercise</div>
         <div

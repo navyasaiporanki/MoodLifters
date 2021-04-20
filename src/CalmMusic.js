@@ -1,6 +1,7 @@
 import React from "react";
 import { useHistory, useLocation } from "react-router-dom";
 import "./BreathingSong.css";
+import { Navbar, Button, Form } from "react-bootstrap";
 
 function CalmMusic() {
   const history = useHistory();
@@ -18,6 +19,15 @@ function CalmMusic() {
         backgroundRepeat: "no-repeat",
       }}
     >
+      <Navbar>
+        <Navbar.Collapse className="justify-content-end">
+          <Form inline>
+            <Button variant="primary" onClick={() => history.push("/")}>
+              Logout
+            </Button>
+          </Form>
+        </Navbar.Collapse>
+      </Navbar>
       <div className="breathingSongBody">
         <div className="playlistTitle">Playing Calm Music</div>
         <div
@@ -51,13 +61,13 @@ function CalmMusic() {
             <div className="goToHomeBS">Playlist</div>
           </div>
           <div
-          className="footerBreathingSong"
-          onClick={() => history.push("/home")}
-        >
-          <div className="material-icons homeBS">home</div>
+            className="footerBreathingSong"
+            onClick={() => history.push("/home")}
+          >
+            <div className="material-icons homeBS">home</div>
 
-          <div className="goToHomeBS">Go to Home</div>
-        </div>
+            <div className="goToHomeBS">Go to Home</div>
+          </div>
         </div>
       </div>
     </div>

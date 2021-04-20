@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import { useHistory } from "react-router-dom";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
+import { Navbar, Button, Form } from "react-bootstrap";
 
 function PreviousMood() {
   const history = useHistory();
@@ -13,6 +13,15 @@ function PreviousMood() {
   const handleShow = () => setShow(true);
   return (
     <div className="bodyMood">
+      <Navbar>
+        <Navbar.Collapse className="justify-content-end">
+          <Form inline>
+            <Button variant="primary" onClick={() => history.push("/")}>
+              Logout
+            </Button>
+          </Form>
+        </Navbar.Collapse>
+      </Navbar>
       <div className="titleMood">Mood Tracker</div>
       <div className="windowMood">
         <div style={{ margin: "20px" }}>Your Previous Mood</div>
@@ -145,7 +154,9 @@ function PreviousMood() {
             className="footerBreathingSong"
             onClick={() => history.push("/moodOptions")}
           >
-            <div className="material-icons homeBS"><i class="fas fa-arrow-left"></i></div>
+            <div className="material-icons homeBS">
+              <i class="fas fa-arrow-left"></i>
+            </div>
 
             <div className="goToHomeBS">Back</div>
           </div>

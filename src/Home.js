@@ -1,6 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import "./Home.css";
+import { Navbar, Button, Form } from "react-bootstrap";
 
 function Home() {
   const history = useHistory();
@@ -16,6 +17,15 @@ function Home() {
         backgroundRepeat: "no-repeat",
       }}
     >
+      <Navbar>
+        <Navbar.Collapse className="justify-content-end">
+          <Form inline>
+            <Button variant="primary" onClick={() => history.push("/")}>
+              Logout
+            </Button>
+          </Form>
+        </Navbar.Collapse>
+      </Navbar>
       <div className="homeBody">
         <div className="showUserName"></div>
 
@@ -66,7 +76,6 @@ function Home() {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );

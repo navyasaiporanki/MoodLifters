@@ -2,6 +2,7 @@ import "./MoodTracker.css";
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import Card from "react-bootstrap/Card";
+import { Navbar, Button, Form } from "react-bootstrap";
 
 function MoodTracker() {
   const history = useHistory();
@@ -13,6 +14,15 @@ function MoodTracker() {
   }
   return (
     <div className="bodyMood">
+      <Navbar>
+        <Navbar.Collapse className="justify-content-end">
+          <Form inline>
+            <Button variant="primary" onClick={() => history.push("/")}>
+              Logout
+            </Button>
+          </Form>
+        </Navbar.Collapse>
+      </Navbar>
       <div className="titleMood">Mood Tracker</div>
       <div className="windowMood">
         <div style={{ margin: "20px" }}>How are you Feeling Today?</div>
@@ -130,12 +140,14 @@ function MoodTracker() {
             View Mood History
           </button>
         </div>
-        <div className="footerDiv" style={{margin:"25px"}}>
+        <div className="footerDiv" style={{ margin: "25px" }}>
           <div
             className="footerBreathingSong"
             onClick={() => history.push("/moodOptions")}
           >
-            <div className="material-icons homeBS"><i class="fas fa-arrow-left"></i></div>
+            <div className="material-icons homeBS">
+              <i class="fas fa-arrow-left"></i>
+            </div>
 
             <div className="goToHomeBS">Back</div>
           </div>

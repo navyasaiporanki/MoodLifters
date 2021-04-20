@@ -71,7 +71,7 @@ code {
 }
 
 .doNotShow {
-  display: none;
+  display: none !important;
 }
 
 
