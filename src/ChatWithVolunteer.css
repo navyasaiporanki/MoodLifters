@@ -14,7 +14,13 @@
     margin: 30px;
     margin-top: 25px;
     text-align: center;
+    margin-bottom: 0px;
   }
+
+.infoText {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
 
 .window {
 

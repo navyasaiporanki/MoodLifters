@@ -25,104 +25,122 @@ function PreviousMood() {
               </Button>
             </Modal.Footer>
           </Modal>
-          <div style={{ display: "flex", margin: "15px" }}>
-            <Card
-              className="cardIndexOne"
-              onClick={() => {
-                setText("I went to Newyork!!");
-                handleShow();
-              }}
-            >
+          <div style={{ display: "flex", margin: "15px", cursor: "pointer" }}>
+            <Card className="cardIndexOne">
               <Card.Body>
                 <i className="far fa-grin-stars fontSizeMood joyful"></i>
                 <br />
                 <label style={{ fontSize: "12px" }}>joyful</label>
                 <br />
                 <label style={{ fontSize: "12px" }}>03/26/2021</label>
+                <div
+                  className="viewNote"
+                  onClick={() => {
+                    setText("I went to Newyork!!");
+                    handleShow();
+                  }}
+                >
+                  View My Note
+                </div>
               </Card.Body>
             </Card>
-            <Card
-              className="cardIndexOne"
-              onClick={() => {
-                setText("Slept all day!!");
-                handleShow();
-              }}
-            >
+            <Card className="cardIndexOne">
               <Card.Body>
                 <i className="fas fa-meh fontSizeMood neutral"></i>
                 <br />
                 <label style={{ fontSize: "12px" }}>neutral</label>
                 <br />
                 <label style={{ fontSize: "12px" }}>03/19/2021</label>
+                <div
+                  className="viewNote"
+                  onClick={() => {
+                    setText("Slept all day!!");
+                    handleShow();
+                  }}
+                >
+                  View My Note
+                </div>
               </Card.Body>
             </Card>
           </div>
-          <div style={{ display: "flex", margin: "15px" }}>
-            <Card
-              className="cardIndexOne"
-              onClick={() => {
-                setText("I completed my Assignment.");
-                handleShow();
-              }}
-            >
+          <div style={{ display: "flex", margin: "15px", cursor: "pointer" }}>
+            <Card className="cardIndexOne">
               <Card.Body>
                 <i className="fal fa-grin fontSizeMood happy"></i>
                 <br />
                 <label style={{ fontSize: "12px" }}>happy</label>
                 <br />
                 <label style={{ fontSize: "12px" }}>03/5/2021</label>
+                <div
+                  className="viewNote"
+                  onClick={() => {
+                    setText("I completed my Assignment.");
+                    handleShow();
+                  }}
+                >
+                  View My Note
+                </div>
               </Card.Body>
             </Card>
-            <Card
-              className="cardIndexOne"
-              onClick={() => {
-                setText("I miss my Home town");
-                handleShow();
-              }}
-            >
+            <Card className="cardIndexOne">
               <Card.Body>
                 <i className="far fa-sad-tear fontSizeMood sad"></i>
                 <br />
                 <label style={{ fontSize: "12px" }}>sad</label>
                 <br />
                 <label style={{ fontSize: "12px" }}>02/26/2021</label>
+                <div
+                  className="viewNote"
+                  onClick={() => {
+                    setText("I miss my Home town");
+                    handleShow();
+                  }}
+                >
+                  View My Note
+                </div>
               </Card.Body>
             </Card>
           </div>
-          <div style={{ display: "flex", margin: "15px" }}>
-            <Card
-              className="cardIndexOne"
-              onClick={() => {
-                setText("Amazon Interview very soon");
-                handleShow();
-              }}
-            >
+          <div style={{ display: "flex", margin: "15px", cursor: "pointer" }}>
+            <Card className="cardIndexOne">
               <Card.Body>
                 <i className="far fa-meh-rolling-eyes fontSizeMood anxious"></i>
                 <br />
                 <label style={{ fontSize: "12px" }}>anxious</label>
                 <br />
                 <label style={{ fontSize: "12px" }}>03/01/2021</label>
+                <div
+                  className="viewNote"
+                  onClick={() => {
+                    setText("Amazon Interview very soon");
+                    handleShow();
+                  }}
+                >
+                  View My Note
+                </div>
               </Card.Body>
             </Card>
-            <Card
-              className="cardIndexOne"
-              onClick={() => {
-                setText("Semester ends and I am graduating");
-                handleShow();
-              }}
-            >
+            <Card className="cardIndexOne">
               <Card.Body>
                 <i className="far fa-grin-stars fontSizeMood joyful"></i>
                 <br />
                 <label style={{ fontSize: "12px" }}>joyful</label>
                 <br />
                 <label style={{ fontSize: "12px" }}>03/26/2021</label>
+                <div
+                  className="viewNote"
+                  onClick={() => {
+                    setText("Semester ends and I am graduating");
+                    handleShow();
+                  }}
+                >
+                  View My Note
+                </div>
               </Card.Body>
             </Card>
           </div>
         </div>
-        <div className="footerDiv" style={{margin:"25px"}}>
+        <div className="footerDiv" style={{ margin: "25px" }}>
           <div
             className="footerBreathingSong"
             onClick={() => history.push("/moodOptions")}

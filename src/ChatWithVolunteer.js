@@ -17,6 +17,9 @@ function ChatWithVolunteer() {
       <div className="titleChat">
         You are chatting with {location.nameOfVolunteer}
       </div>
+      <div className="infoText">
+        {location.infoOfVolunteer}
+      </div>
       <div className="window">
         <div className="mess">
           <div>Hello</div>

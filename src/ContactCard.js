@@ -16,6 +16,7 @@ function ContactCard({ name, title, info }) {
             history.push({
               pathname: "/chat",
               nameOfVolunteer: name,
+              infoOfVolunteer:info
             });
           }}
         >

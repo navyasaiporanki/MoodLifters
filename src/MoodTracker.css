@@ -100,3 +100,10 @@ textarea:hover {
 .footerBreathingSong{
     cursor: pointer;
 }
+
+.viewNote {
+    font-size:12px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: red;
+}

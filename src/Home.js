@@ -26,7 +26,7 @@ function Home() {
             onClick={() => history.push("/breathing")}
           >
             {" "}
-            Do CBT Breathing Exercise{" "}
+            Do Breathing Exercise{" "}
           </button>
           <button
             className="buttonClassHome"
@@ -40,7 +40,7 @@ function Home() {
             onClick={() => history.push("/resources")}
           >
             {" "}
-            Get Mental health Resources
+            See Mental Health Tips
           </button>
         </div>
 
