@@ -17,9 +17,7 @@ function ChatWithVolunteer() {
       <div className="titleChat">
         You are chatting with {location.nameOfVolunteer}
       </div>
-      <div className="infoText">
-        {location.infoOfVolunteer}
-      </div>
+      <div className="infoText">{location.infoOfVolunteer}</div>
       <div className="window">
         <div className="mess">
           <div>Hello</div>
@@ -44,11 +42,26 @@ function ChatWithVolunteer() {
           </Modal.Footer>
         </Modal>
       </div>
-      <div className="footerMentalHealth" onClick={() => history.push("/home")}>
+      <div className="chatFooterIcons">
+      <div className="footerMentalHealth" onClick={() => history.push("/volunteer")}>
+        <div className="material-icons homeFont"><i class="fas fa-arrow-left"></i></div>
+
+        <div className="goToHome">Back</div>
+      </div>
+        <div
+          className="footerMentalHealth"
+          onClick={() => history.push("/home")}
+        >
+          <div className="material-icons homeFont">home</div>
+
+          <div className="goToHome">Go to Home</div>
+        </div>
+      </div>
+      {/* <div className="footerMentalHealth" onClick={() => history.push("/home")}>
         <div className="material-icons homeFont">home</div>
 
         <div className="goToHome">Go to Home</div>
-      </div>
+      </div> */}
     </div>
   );
 }

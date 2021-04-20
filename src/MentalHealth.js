@@ -11,7 +11,7 @@ export default function MentalHealth() {
     <div className="healthResBody">
       <div className="titleMental">Mental Health Resources</div>
       <div className="allResources">
-        <Accordion defaultActiveKey="0">
+        <Accordion >
           <Card style={{ width: "100%" }}>
             <Card.Header>
               <Accordion.Toggle as={Button} variant="link" eventKey="0">
@@ -20,11 +20,13 @@ export default function MentalHealth() {
             </Card.Header>
             <Accordion.Collapse eventKey="0">
               <Card.Body>
-                Tips to manage anger: <br />
-                <div>1. Think before you speak</div>
-                <div>2.Get some exercise</div>
-                <div>3.Take a timeout</div>
-                <div>4.Use humor to release tension</div>
+                <div>
+                  Tips to manage anger: <br />
+                  <div>1. Think before you speak</div>
+                  <div>2.Get some exercise</div>
+                  <div>3.Take a timeout</div>
+                  <div>4.Use humor to release tension</div>
+                </div>
               </Card.Body>
             </Accordion.Collapse>
           </Card>

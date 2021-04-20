@@ -113,7 +113,7 @@ function MoodTracker() {
             className="getStarted"
             style={{ margin: "auto" }}
             onClick={() => {
-              alert("Mood Saved Successfully");
+              alert("Mood Saved Successfully to Mood History.");
               setSelected("");
               setValue("");
             }}
@@ -127,7 +127,7 @@ function MoodTracker() {
               history.push("/prevMood");
             }}
           >
-            View My Previous Mood
+            View Mood History
           </button>
         </div>
         <div className="footerDiv" style={{margin:"25px"}}>
@@ -135,9 +135,9 @@ function MoodTracker() {
             className="footerBreathingSong"
             onClick={() => history.push("/moodOptions")}
           >
-            <div className="material-icons homeBS">sentiment_satisfied_alt</div>
+            <div className="material-icons homeBS"><i class="fas fa-arrow-left"></i></div>
 
-            <div className="goToHomeBS">Playlist</div>
+            <div className="goToHomeBS">Back</div>
           </div>
           <div
             className="footerMentalHealth"

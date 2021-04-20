@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
 import "./App.css";
 
 function Name() {
   const history = useHistory();
-  //const [showContinueButton, setshowContinueButton] = useState(false);
-  const [value, setValue] = useState("");
 
-  function handleClick(event) {
-    setValue(event.target.value);
-  }
+  const [displayButton, setDisplayButton] = useState("");
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <div
       style={{
@@ -27,26 +30,67 @@ function Name() {
           <label className="stressMsg">Live Life Stress Free!</label>
         </div>
       </div>
+
       <div className="nameBlock">
-        <label className="enterName">What would you like me to call you?</label>
-        <input
-          type="text"
-          className="textBox"
-          placeholder="Enter your Name.."
-          value={value}
-          onChange={(event) => handleClick(event)}
-        ></input>
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Body className="bodyOfModal">
+            <input
+              type="text"
+              className="textBox"
+              placeholder="Enter User Name.."
+            ></input>
+            <input
+              type="password"
+              className="textBox"
+              placeholder="Enter your password"
+            ></input>
+            <button
+              className={displayButton === "login" ? "getStarted" : "doNotShow"}
+              onClick={() => {
+                history.push("/display");
+              }}
+            >
+              {" "}
+              Login
+            </button>
+            <button
+              className={
+                displayButton === "signup" ? "getStarted" : "doNotShow"
+              }
+              onClick={() => {
+                history.push("/display");
+              }}
+            >
+              {" "}
+              Sign Up
+            </button>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
         <button
-          
-          className={value !== "" ? 'getStarted': 'doNotShow'}
+          className="getStarted"
           onClick={() => {
-            history.push("/display");
+            setDisplayButton("login");
+            handleShow();
           }}
         >
           {" "}
-          Get Started
+          Login
         </button>
-        <div></div>
+        <button
+          className="getStarted"
+          onClick={() => {
+            setDisplayButton("signup");
+            handleShow();
+          }}
+        >
+          {" "}
+          Sign Up
+        </button>
       </div>
     </div>
   );

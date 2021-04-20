@@ -145,9 +145,9 @@ function PreviousMood() {
             className="footerBreathingSong"
             onClick={() => history.push("/moodOptions")}
           >
-            <div className="material-icons homeBS">sentiment_satisfied_alt</div>
+            <div className="material-icons homeBS"><i class="fas fa-arrow-left"></i></div>
 
-            <div className="goToHomeBS">Playlist</div>
+            <div className="goToHomeBS">Back</div>
           </div>
           <div
             className="footerMentalHealth"

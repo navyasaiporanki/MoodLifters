@@ -48,7 +48,7 @@ function MoodOptions() {
             }
           >
             {" "}
-            View Previous Mood
+            View Mood History
           </button>
         </div>
 

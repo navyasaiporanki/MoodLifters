@@ -63,3 +63,8 @@
     text-align: end;
     padding:20px;
 }
+
+.chatFooterIcons {
+    display: flex;
+    justify-content: space-around;
+}
