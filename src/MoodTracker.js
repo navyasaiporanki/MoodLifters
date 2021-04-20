@@ -104,7 +104,7 @@ function MoodTracker() {
               value={value}
               onChange={(event) => handleClick(event)}
               style={{ width: "100%", height: "125px", border: "none" }}
-              placeholder="Why are you feeling like this?"
+              placeholder="What happened to make you feel that way?"
             ></textarea>
           </div>
         </div>
